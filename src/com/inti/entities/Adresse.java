@@ -13,6 +13,7 @@ public class Adresse implements Serializable {
 	private static final long serialVersionUID = 1L;
 	private String rue;
 	private String ville;
+	private String codePostal;
 
 	public Adresse() {
 		super();
@@ -38,6 +39,14 @@ public class Adresse implements Serializable {
 
 	public void setVille(String ville) {
 		this.ville = ville;
+	}
+
+	public String getCodePostal() {
+		return codePostal;
+	}
+
+	public void setCodePostal(String codePostal) {
+		this.codePostal = codePostal;
 	}
 
 	
