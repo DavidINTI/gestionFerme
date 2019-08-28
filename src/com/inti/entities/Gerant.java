@@ -1,6 +1,7 @@
 package com.inti.entities;
 
 import java.io.Serializable;
+import java.util.Date;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -20,6 +21,7 @@ public class Gerant implements Serializable {
 	private Long idGerant;
 	private String nom;
 	private String prenom;
+	private Date dateDeNaissance;
 	@ManyToOne
 	private Ferme ferme;
 
@@ -56,6 +58,14 @@ public class Gerant implements Serializable {
 
 	public void setFerme(Ferme ferme) {
 		this.ferme = ferme;
+	}
+
+	public Date getDateDeNaissance() {
+		return dateDeNaissance;
+	}
+
+	public void setDateDeNaissance(Date dateDeNaissance) {
+		this.dateDeNaissance = dateDeNaissance;
 	}
 
 }
